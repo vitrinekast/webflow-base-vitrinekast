@@ -195,3 +195,7 @@ a,
   padding-right: 0rem !important;
   padding-left: 0rem !important;
 }
+
+.border-test {
+  border: 1px solid red;
+}
