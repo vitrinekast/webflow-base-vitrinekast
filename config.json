@@ -1,0 +1,57 @@
+{
+    "server": "./dist",
+    "dest": "./dist",
+    "theme_name": "ST",
+    "child_theme_name": false,
+    "proxy": "localhost:8000",
+    "copyCSS": false,
+    "multilang": false,
+    "version": {
+        "src": [
+            "./package.json"
+        ],
+        "dest": "."
+    },
+    "assets": {
+        "src": [
+            "./src/assets/**/**/*",
+            "!./src/assets/images/**/**/*"
+        ],
+        "dest": "./dist/assets/"
+    },
+    "scss": {
+        "src": [
+            "./src/scss/style.scss"
+        ],
+        "files": [
+            "./src/scss/**/*.scss"
+        ],
+        "dest": "./dist"
+    },
+    "images": {
+        "src": "./src/assets/images/**/*",
+        "dest": "./dist/assets/images"
+    },
+    "js": {
+        "src": [
+            "./src/js/dev/controllers/*",
+            "./src/js/dev/_app.js"
+        ],
+        "libs": "./src/js/libs/**/*",
+        "modules": "./src/js/modules/**/*",
+        "dest": "./dist/js"
+    },
+    "localize": {
+        "src": "./src/theme/**/*.php",
+        "dest": "./src/theme/languages"
+    },
+    "templates": {
+        "src": [
+            "./src/theme/*",
+            "./src/theme/**/*",
+            "./src/theme/**/**/*"
+        ],
+        "dest": "./dist",
+        "release": "./dist"
+    }
+}

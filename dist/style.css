@@ -8,24 +8,27 @@ body {
 
 /* Focus state style for keyboard navigation for the focusable elements */
 *[tabindex]:focus-visible,
-  input[type="file"]:focus-visible {
-   outline: 0.125rem solid #4d65ff;
-   outline-offset: 0.125rem;
+input[type='file']:focus-visible {
+  outline: 0.125rem solid #4d65ff;
+  outline-offset: 0.125rem;
 }
 
 /* Get rid of top margin on first element in any rich text element */
-.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+.w-richtext > :not(div):first-child,
+.w-richtext > div:first-child > :first-child {
   margin-top: 0 !important;
 }
 
 /* Get rid of bottom margin on last element in any rich text element */
-.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
-	margin-bottom: 0 !important;
+.w-richtext > :last-child,
+.w-richtext ol li:last-child,
+.w-richtext ul li:last-child {
+  margin-bottom: 0 !important;
 }
 
 /* Prevent all click and hover interaction with an element */
 .pointer-events-off {
-	pointer-events: none;
+  pointer-events: none;
 }
 
 /* Enables all click and hover interaction with an element */
@@ -35,14 +38,16 @@ body {
 
 /* Create a class of .div-square which maintains a 1:1 dimension of a div */
 .div-square::after {
-	content: "";
-	display: block;
-	padding-bottom: 100%;
+  content: '';
+  display: block;
+  padding-bottom: 100%;
 }
 
 /* Make sure containers never lose their center alignment */
-.container-medium,.container-small, .container-large {
-	margin-right: auto !important;
+.container-medium,
+.container-small,
+.container-large {
+  margin-right: auto !important;
   margin-left: auto !important;
 }
 
@@ -65,21 +70,20 @@ a,
   font-size: inherit;
 }
 */
-
 /* Apply "..." after 3 lines of text */
 .text-style-3lines {
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 /* Apply "..." after 2 lines of text */
 .text-style-2lines {
-	display: -webkit-box;
-	overflow: hidden;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 /* Adds inline flex display */
@@ -93,20 +97,23 @@ a,
 }
 
 @media screen and (max-width: 991px) {
-    .hide, .hide-tablet{
-      display: none !important;
-    }
+  .hide,
+  .hide-tablet {
+    display: none !important;
   }
-  @media screen and (max-width: 767px)
-    .hide-mobile-landscape{
-      display: none !important;
-    }
+}
+
+@media screen and (max-width: 767px) {
+  .hide-mobile-landscape {
+    display: none !important;
   }
-  @media screen and (max-width: 479px)
-    .hide-mobile{
-      display: none !important;
-    }
+}
+
+@media screen and (max-width: 479px) {
+  .hide-mobile {
+    display: none !important;
   }
+}
 
 .margin-0 {
   margin: 0rem !important;
@@ -117,8 +124,8 @@ a,
 }
 
 .spacing-clean {
-padding: 0rem !important;
-margin: 0rem !important;
+  padding: 0rem !important;
+  margin: 0rem !important;
 }
 
 .margin-top {
