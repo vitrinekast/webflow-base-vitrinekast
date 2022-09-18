@@ -196,6 +196,10 @@ a,
   padding-left: 0rem !important;
 }
 
-.border-test {
-  border: 1px solid red;
+.ratio-rect {
+  aspect-ratio: 1/1;
+}
+
+.ratio-2-3 {
+  aspect-ratio: 2/3;
 }

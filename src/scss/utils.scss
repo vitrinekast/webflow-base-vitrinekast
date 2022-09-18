@@ -1,0 +1,10 @@
+// all tokens can go here
+.ratio {
+    &-rect {
+        aspect-ratio: 1/1;
+    }
+
+    &-2-3 {
+        aspect-ratio: 2/3;
+    }
+}

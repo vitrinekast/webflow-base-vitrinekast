@@ -1,6 +1,3 @@
 @import "_config.scss";
 @import "libs/client-first.scss";
-
-.border-test {
-    border: 1px solid red;
-}
+@import "utils.scss";
